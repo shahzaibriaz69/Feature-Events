@@ -256,3 +256,59 @@ body {
 .btn-register:hover {
   background: #ff4757;
 }
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.event-slider {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px;
+}
+
+.event-card {
+  min-width: calc(33.333% - 20px); /* Shows 3 cards at a time */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider Buttons */
+.slider-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15%;
+  z-index: 10;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* Responsive: Show 1 card on mobile */
+@media (max-width: 768px) {
+  .event-card {
+    min-width: 100%;
+  }
+}
