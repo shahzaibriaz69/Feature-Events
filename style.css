@@ -167,3 +167,92 @@ body {
     font-size: 1rem;
   }
 }
+
+/* Featured Events Section */
+.featured-events {
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.section-title span {
+  color: #ff4757;
+}
+
+/* Grid Layout */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styling */
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-info {
+  padding: 25px;
+}
+
+.event-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.event-meta,
+.event-location {
+  font-size: 0.9rem;
+  color: #353535;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.event-desc {
+  font-size: 0.95rem;
+  color: #777;
+  margin: 15px 0 20px 0;
+  line-height: 1.5;
+}
+
+/* Register Button */
+.btn-register {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-register:hover {
+  background: #ff4757;
+}
