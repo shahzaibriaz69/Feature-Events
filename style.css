@@ -68,3 +68,102 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+/* Hero Section Layout */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/photo-1511795409834-ef04bbd61622.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 5%;
+}
+
+/* Content Styling */
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-content h1 span {
+  color: #ff4757;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Button Group */
+.hero-btns .btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-primary {
+  background: #ff4757;
+  color: white;
+  border: 2px solid #ff4757;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #111;
+  transform: translateY(-5px);
+}
+
+/* Smooth Entrance Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
