@@ -541,20 +541,22 @@ body {
 
   .hero-btns .btn-primary,
   .btn-secondary {
-    width: 100%; /* Mobile par buttons full width ache lagte hain */
+    width: 100%;
     margin: 5px 0;
   }
 }
 
 @media (max-width: 480px) {
   .footer-container {
-    grid-template-columns: 1fr; /* Sab kuch ek line mein aa jayega */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
   .footer-col h4::after {
     left: 50%;
-    transform: translateX(-50%); /* Red line ko center karne ke liye */
+    transform: translateX(-50%);
+    width: 70px;
+    height: 2px;
   }
 
   .contact-item {
