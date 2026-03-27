@@ -294,8 +294,6 @@ body {
   border-radius: 15%;
   z-index: 10;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -475,4 +473,27 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #888;
   font-size: 0.9rem;
+}
+
+.projects-swiper {
+  margin-inline: initial;
+  padding-bottom: 2rem;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
 }

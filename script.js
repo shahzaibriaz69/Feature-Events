@@ -41,3 +41,5 @@ function filterEvents() {
     slider.style.transform = `translateX(0px)`;
     counter = 0;
 }
+
+
