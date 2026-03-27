@@ -42,4 +42,3 @@ function filterEvents() {
     counter = 0;
 }
 
-
