@@ -327,7 +327,7 @@ body {
 
 #eventSearch {
   width: 100%;
-  padding: 12px 45px 12px 20px; /* Added 45px padding on the right for the icon */
+  padding: 12px 45px 12px 20px;
   font-size: 16px;
   border: 2px solid #ddd;
   border-radius: 50px;
@@ -343,11 +343,11 @@ body {
 /* Icon Styling inside the box */
 .search-icon {
   position: absolute;
-  right: 20px; /* Distance from the right edge */
+  right: 20px;
   top: 50%;
-  transform: translateY(-50%); /* Perfectly centers it vertically */
+  transform: translateY(-50%);
   color: #888;
-  pointer-events: none; /* Allows user to click "through" the icon onto the input */
+  pointer-events: none;
   transition: color 0.3s ease;
 }
 
@@ -451,7 +451,7 @@ body {
 
 .social-links a:hover {
   background-color: #ff4757;
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 
 /* Contact Items */
