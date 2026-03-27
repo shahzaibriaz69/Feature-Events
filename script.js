@@ -8,7 +8,7 @@ let counter = 0;
 nextBtn.addEventListener('click', () => {
     const cardWidth = cards[0].offsetWidth + 30;
 
-    let cardsPerView = window.innerWidth < 768 ? 1 : 5;
+    let cardsPerView = window.innerWidth < 1980 ? 1 : 5;
 
     if (counter < cards.length - cardsPerView) {
         counter++;
