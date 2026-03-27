@@ -6,21 +6,23 @@ const prevBtn = document.querySelector('.prev');
 let counter = 0;
 
 nextBtn.addEventListener('click', () => {
-    const cardWidth = cards[0].clientWidth + 30; // Card width + gap
-    if (counter < cards.length - 3) { // Stop at the last set of 3
+    const cardWidth = cards[0].offsetWidth + 30;
+
+    let cardsPerView = window.innerWidth < 768 ? 1 : 5;
+
+    if (counter < cards.length - cardsPerView) {
         counter++;
         slider.style.transform = `translateX(${-cardWidth * counter}px)`;
     }
 });
 
 prevBtn.addEventListener('click', () => {
-    const cardWidth = cards[0].clientWidth + 30;
+    const cardWidth = cards[0].offsetWidth + 30;
     if (counter > 0) {
         counter--;
         slider.style.transform = `translateX(${-cardWidth * counter}px)`;
     }
 });
-
 function filterEvents() {
 
     const input = document.getElementById('eventSearch').value.toLowerCase();
